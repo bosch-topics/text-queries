@@ -1,0 +1,168 @@
+Tools:
+
+1) Cast Iron Base:
+	Description of cast iron base:
+	• accommodates all the parts 
+	• It's made of cast iron 
+	• designed to fix all at required access to/ different lock and detection slides
+	• facilitate fixing of machine on sleepers 
+	• Provides an arrangement to drain out water/ oil in bottom of cable casting. 
+	• Provides entry
+	• Assembly sequence for Cast Iron Base is 1
+	
+ 
+2) Drive disc and Locking segement :
+	Description of Drive disc and Locking segement:
+	Drive Disc Functions: 
+	• Extend movement to shaft hence rotate pinion and lock pawl. 
+	• Restrict rotary movement to 270 degree and provide subbing 
+	• Hold gear rim on outer periphery 
+	• Convert rotary movement in to linear movement
+	Throw and Lock assembly(Internal part) 
+	• Used for Rotary to linear conversion mechanism 
+	• locking sector is used to lock the point by entering into the lock slide notches 
+	• Part of the transmission assembly
+	• Assembly sequence for Drive disc and Locking segement is 2
+	• Dimensions for Drive disc and Locking segement are Length: 112, Width: 86, Height: 70.
+	
+3) Main gear rim slip rim and Shoe Expansion :
+	Description of Main gear rim slip rim and Shoe Expansion:
+	• extend stroke (force) from motor to load (point) if load is within specified limit (700 Kg) 
+	• de-clutch (separate) motor and Load (point) if load is more than specified limit (700 Kg).
+	• De-clutching of friction clutch can be adjusted to suite specified limit of load (700 Kg) by loosening Or tightening spring at workshops
+	Friction clutch require an adjustment if: 
+	• Slipping current /obstruction current is more than 1.5 to 2 times of normal working current 
+	• Replacement When difference between normal operating current and current under obstruction is less than 0.5 A.
+	• The friction clutch shall be adjusted in workshop only (not at site).
+	• Assembly sequence for Main gear rim slip rim and Shoe Expansion is 3.
+	• Dimensions for Main gear rim slip rim and Shoe Expansion are Length: 261, Width: 261, Height: 13.2
+	
+4) Lift out Disc
+	Description of Lift out Disc:
+	• It is first disc to rotate in friction clutch.
+	• Function :
+	a. To lift the top roller (roller A) to open detection contacts at beginning of point operation.
+	• Assembly sequence for Lift out Disc is 4.
+	• Dimensions for Lift out Disc are Length: 260, Width: 260, Height: 25.
+	
+5) Control Disc
+	Description of Control Disc:
+	• It is a circular disc with notch on outer periphery.
+	• Edges of notch are vertical.
+	• Function of control disc are:
+	a. Allow the top roller (roller A) to fall in side respective notch at end friction clutch rotation.
+	b. Prevent upward movement of top roller (lock the top roller).
+	• Assembly sequence for Lift out Disc is 5.
+	• Dimensions for Control Disc are Length: 220, Width: 220, Height: 44.
+	
+6) Bearing Pedestal
+	Description of Bearing Pedestal:
+	• 2 No's.
+	• Used to hold friction clutch to the housing.
+	• Also called Mechanical fuse.
+	• Gets damaged first when point trail through thus protecting damage to point.
+	• Assembly sequence for Lift out Disc is 6 and 9.
+	• Dimensions for Bearing Pedestal are Length: 350, Width: 47, Height: 32 and Length: 135, Width: 57.5, Height: 34.
+
+7) Slide Mounting brackets
+	Description of Slide Mounting brackets: It is an external component. Assembly sequence for Slide Mounting brackets is 8.
+	
+8) Detection Assembly 
+	Description of Detection Assembly:
+	• Comprises of two spring loaded contact groups which are fixed inside the casting. 
+	• Function of the contact assembly: - make and break the sets of contact. 
+	• One group Contains two sets of contact fixed side by side 
+	• Contact controls feed (Power) to motor and point indication relay
+	
+	Contact Assembly-making of contacts
+	• depend upon position of top and bottom roller on the periphery of control disc and detection slide respectively. 
+	• Detection contact in one group & control contact in other group makes when top roller fall in nominated notch on friction clutch bottom roller fall in nominated notch on periphery detection slide
+	• falling of top roller in notch proves correct locking of point 
+	• Falling of bottom roller in notch on proves correct setting of switches / points
+	• Point set in N & Locked …ND & RC make 
+	• Point set in R & Locked …RD & NC make 
+	• Point not set in N or R …NC & RC make
+	• Assembly sequence for Detection Assembly is 10.
+	• Dimensions for Detection Assembly are Length: 350, Width: 150, Height: 100.
+	
+9) 110V DC split field series motor
+	Description of 110V DC split field series motor:
+	• DC Series Split Field Motor is used 
+	• works on 110volt DC
+	• Series motor is used to meet high initial torque
+	• Split field so that motor can be rotated in both direction
+	1.Armature and commutator
+	Function of armature :To carry current crossing the field thus creating shaft toque To generate an electromotive force 
+	Function of Commutator :Reverse moving armature the current in coil of motor’s and generate a steady rotating force (torque)
+	2.Field winding
+	• Contains four field windings 
+	• Two windings are connected in series to form a set of winding. 
+	• Use carbon brushes
+	3. Carbon brushes
+	• Rectangular carbon block 
+	• spring loaded in holder 
+	• provides the electric connectivity between field windings and rotating commutator 
+	• Spring force (4.0- 6.0 PSI)
+	Technical parameters of motor 
+	•Type - D.C. Series split field 
+	•Operating voltage - 110 Volt DC 
+	• (60 volt minimum) 
+	•Current - < 4.5 Amp (Normally 2 to 2.5Amps) 
+	•Slipping load - 580 Kg 
+	•Power - 0.48KW
+	•Reduction ratio (in side motor)- 20.8 :1
+	•AC immunity - 160 VAC 
+	•Power supply terminals - 03 
+	•Insulation grade of windings…More than 10 M Ohms 
+	•Codal life - 3 lakh operations/12 years in A & B routes/7 years in C or sub urban route/15 years in D & D spl & E & E spl routes.
+	• Assembly sequence for 110V DC split field series motor is 11.
+	• Dimensions for 110V DC split field series motor are Length: 530, Width: 244, Height: 241.
+	
+10) Crank handle cutout switch
+	 Description of Crank handle cutout switch:
+	 • There are two sets of contacts
+	 • These contacts are wired in negative path of power supply to motor.
+	 • Contacts break / open with insertion and turning of crank handle key
+	 • Makes when crank handle key is taken out.
+	 • Assembly sequence for Crank handle cutout switch is 12.
+	 • Dimensions for Crank handle cutout switch are Length: 188, Width: 125, Height: 3.
+	 
+11) Crank handle 
+	 Description of Crank handle:
+	 • used for manual operation of point machine
+	 • “Z” shape structure made of steel pipe and has wooden handle on one end to have better gripe.
+	 • Wards & feathers are welded on other end of pipe.
+	 • facilitates coding (insertion of only to nominated crank handle).
+	 • A stud is intrude in the pipe, it getengage in forked shaft of motor.
+	 • Assembly sequence for Crank handle is 13.
+	 • Dimensions for Crank handle are Length: 321, Width: 81, Height: 50.
+	 
+12) Point cover
+	 Description of Point cover:
+	 • thick iron sheet 
+	 • Contain S&T maintainer's lock 
+	 • Secures all the parts of machine in weather proof environment 
+	 • prevents un-authorized interference
+	 • Provides access only to nominated (ward &feather) crank handle insertion. 
+	 • All the apertures for keys and crank handle are secured by flaps 
+	 • All flaps has a locking arrangement
+	 • Assembly sequence for Point cover is 14.
+	 • Dimensions for Point cover are Length: 745, Width: 400, Height: 168.
+	 
+13) Oil Felt arrangement
+	 Description of Oil Felt arrangement: None
+	 
+14) Cut out key & Point lock keys 
+	 Description of Cut out key & Point lock keys:
+	 • controls the entry of crank handle in the machine for manual operation. 
+	 • metal flaps attached to a lock. 
+	 • hangs/ placed in front of motor shaft at the entry point of crank handle. 
+	 • flap cover plate is displaced by means of a crank handle key.
+     • displace the flap cover plate to allow insertion of handle crank. 
+     • open crank handle cutout contacts.
+	 
+	 Removal of the crank handle key:
+     • replaces flap cover in front of motor shaft.
+     • makes the crank handle contact.
+	 • Assembly sequence for Cut out key & Point lock keys is 15.
+	 • Dimensions for Cut out key & Point lock keys Length: 90, Width: 50, Height: 5.
