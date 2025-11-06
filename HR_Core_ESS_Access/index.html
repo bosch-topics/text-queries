@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR CORE ESS Access Guide</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fb;
+      margin: 40px;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .step {
+      background: #fff;
+      border-left: 5px solid #0078d4;
+      padding: 15px 20px;
+      margin-bottom: 25px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+      display: inline-block;
+      margin: 2px 0;
+    }
+    ul {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HR CORE ESS Access Guide</h1>
+  <p>Please follow the steps below to get access for <strong>HR CORE ESS</strong>:</p>
+
+  <div class="step">
+    <h2>Step 1: Open OneIDM</h2>
+    <p>Go to the OneIDM link below:</p>
+    <p><a href="https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start" target="_blank">
+      https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start
+    </a></p>
+
+    <p>Navigate through the following menu:</p>
+    <ul>
+      <li>Click <b>Request → New Request</b></li>
+      <li>Search for the requester <b>NT ID</b> in the <b>Recipients Field</b> and select it</li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>Step 2: Add PH1011 Roles</h2>
+    <ul>
+      <li>Search for IT Application <b>“PH1011”</b> and click on it</li>
+      <li>Search for default roles under <b>Services</b>:</li>
+      <ul>
+        <li><code>X:H0SY_XXXX_ALL_M_MINUSER_HR</code> → Check box → Add to Shopping Cart</li>
+        <li><code>X:H0HR_INXX_MA_ESS</code> → Add to Shopping Cart</li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>Step 3: Add PXG011 Roles</h2>
+    <ul>
+      <li>Search for IT Application <b>“PXG011”</b> and click on it</li>
+      <li>Search for the following roles under <b>Services</b> and add each to the shopping cart:</li>
+      <ul>
+        <li><code>X:0GFI_FIORI_SSF_MYACC_PDX</code></li>
+        <li><code>X:0GXX_FIORI_ALL_MINUSER</code></li>
+        <li><code>X:0GHR_FIORI_HCM_IN_HPE_PH1</code></li>
+        <li><code>X:0GHR_FIORI_HCM_IN_ESS_PH1</code></li>
+        <li><code>X:0GHR_FIORI_TRV_RBEI_PI0</code></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>Step 4: Add Portal Roles</h2>
+    <ul>
+      <li>Search for IT Application <b>“Portal”</b> and click on it</li>
+      <li>Search for the following roles under <b>Services</b> and add each to the shopping cart:</li>
+      <ul>
+        <li><code>CN=org_every_rbei_associate,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</code></li>
+        <li><code>CN=rb_myhr_associate_in,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</code></li>
+        <li><code>CN=rb_fi_myaccounting_self_service_new_ui,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</code></li>
+        <li><code>CN=rb_fi_myaccounting_self_service,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</code></li>
+        <li><code>CN=rb_flp_hr_core_users,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</code></li>
+        <li><code>CN=rb_flp_swift_trv_grp,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</code></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>Step 5: Submit the Request</h2>
+    <ul>
+      <li>Click the <b>Shopping Cart</b> symbol (top-right corner)</li>
+      <li>Check all boxes for the selected roles</li>
+      <li>Enter a <b>Justification</b></li>
+      <li>Click <b>Save → Order</b></li>
+    </ul>
+
+    <p>A <b>Combined Request ID</b> will be generated, and the requester will be notified via email from  
+    <code>identity.manager@de.bosch.com</code> with the subject line:  
+    <i>“oneIDM info: request submitted”</i></p>
+  </div>
+
+</body>
+</html>
