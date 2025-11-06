@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Portal Access Guide</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fb;
+      color: #333;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .step {
+      background: #fff;
+      border-left: 5px solid #0078d4;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    ul {
+      margin: 10px 0 0 20px;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+      font-size: 0.95em;
+      display: inline-block;
+      margin: 2px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Credit Card Portal Access Guide</h1>
+  <p>IT Applications involved: <b>PI0311, PXG011 & Portal</b></p>
+
+  <div class="step">
+    <h2>Step 1: Open OneIDM</h2>
+    <p>Go to the OneIDM link:</p>
+    <p>
+      <a href="https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start" target="_blank">
+        https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start
+      </a>
+    </p>
+    <ul>
+      <li>Click <b>Request → New Request</b></li>
+      <li>Search for requester <b>NT ID</b> in the Recipients Field and select the requester</li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>Step 2: Add PI0311 Roles</h2>
+    <ul>
+      <li>Search for IT Application <b>PI0311</b> and click on it</li>
+      <li>Search for default roles in <b>Services</b>:
+        <ul>
+          <li><code>X:H5TM_XXXX_MIN_USER</code> → Check box → Add to Shopping Cart</li>
+          <li><code>X:H5TM_XXXX_RBEI_EMPLOYEE</code> → Add to Shopping Cart</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>Step 3: Add PXG011 Role</h2>
+    <ul>
+      <li>Search for IT Application <b>PXG011</b> and click on it</li>
+      <li>Search for default role in <b>Services</b>:
+        <ul>
+          <li><code>X:0GHR_FIORI_TRV_RBEI_PI0</code> → Check box → Add to Shopping Cart</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>Step 4: Add Portal Role</h2>
+    <ul>
+      <li>Search for IT Application <b>Portal</b> and click on it</li>
+      <li>Search for default role in <b>Services</b>:
+        <ul>
+          <li><code>CN=rb_flp_swift_trv_grp,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</code> → Check box → Add to Shopping Cart</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>Step 5: Submit Request</h2>
+    <ul>
+      <li>Click the <b>Shopping Cart</b> symbol (top right corner)</li>
+      <li>Check all boxes for the selected roles</li>
+      <li>Enter a <b>Justification</b></li>
+      <li>Click <b>Save → Order</b></li>
+    </ul>
+    <p>A <b>Combined Request ID</b> will be generated. The requester will be notified via email from <code>identity.manager@de.bosch.com</code> with the subject: <i>oneIDM info: request submitted</i>.</p>
+  </div>
+
+</body>
+</html>
