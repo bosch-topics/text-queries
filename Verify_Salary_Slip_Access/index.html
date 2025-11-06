@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Salary Slip Access</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 30px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    h2 {
+      margin-top: 25px;
+    }
+    ul {
+      margin: 10px 0 20px 20px;
+    }
+    .role-list {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      margin: 10px 0 20px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #0078d4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Verify Salary Slip Access</h1>
+
+  <p>You can verify your access availability to see your salary slip through the below steps:</p>
+
+  <div class="role-list">
+    <h2>Step 1: Go to OneIDM</h2>
+    <p>
+      <strong>OneIDM Link:</strong> 
+      <a href="https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start" target="_blank">
+        https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start
+      </a>
+    </p>
+    <p>Click on <strong>Requests → Extend or Revoke</strong></p>
+    <p>Search IT Applications: <strong>PH1011, PXG011, Portal</strong> & Roles</p>
+  </div>
+
+  <div class="role-list">
+    <h2>PH1011 Roles</h2>
+    <ul>
+      <li>PH1011 → X:H0SY_XXXX_ALL_M_MINUSER_HR</li>
+      <li>PH1011 → X:H0HR_INXX_MA_ESS</li>
+    </ul>
+  </div>
+
+  <div class="role-list">
+    <h2>PXG011 Roles</h2>
+    <ul>
+      <li>PXG011 → X:0GFI_FIORI_SSF_MYACC_PDX</li>
+      <li>PXG011 → X:0GXX_FIORI_ALL_MINUSER</li>
+      <li>PXG011 → X:0GHR_FIORI_HCM_IN_HPE_PH1</li>
+      <li>PXG011 → X:0GHR_FIORI_HCM_IN_ESS_PH1</li>
+      <li>PXG011 → X:0GHR_FIORI_TRV_RBEI_PI0</li>
+    </ul>
+  </div>
+
+  <div class="role-list">
+    <h2>Portal Roles</h2>
+    <ul>
+      <li>CN=org_every_rbei_associate,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</li>
+      <li>CN=rb_myhr_associate_in,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</li>
+      <li>CN=rb_fi_myaccounting_self_service_new_ui,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</li>
+      <li>CN=rb_fi_myaccounting_self_service,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</li>
+      <li>CN=rb_flp_hr_core_users,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</li>
+      <li>CN=rb_flp_swift_trv_grp,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</li>
+    </ul>
+  </div>
+
+</body>
+</html>
