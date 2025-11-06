@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWIFT Access Troubleshooting Guide</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fb;
+      color: #333;
+      line-height: 1.7;
+      margin: 40px;
+    }
+    h1, h2, h3 {
+      color: #003366;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin: 10px 0 10px 20px;
+    }
+    .step {
+      background: #fff;
+      border-left: 5px solid #0078d4;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    code {
+      background: #f4f4f4;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+      font-size: 0.95em;
+    }
+    .note {
+      background: #fff8e1;
+      padding: 12px;
+      border-left: 5px solid #ffb100;
+      border-radius: 6px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SWIFT Access Troubleshooting Guide</h1>
+
+  <p>If you are unable to access the <b>SWIFT Application</b>, there are several possible reasons:</p>
+
+  <ul>
+    <li>Not using SWIFT application for longer than 6 months or the SWIFT system may not be available for the user.</li>
+    <li>Password for <b>PI0 application</b> may have expired (after 1 year or more).</li>
+    <li><b>PI0311</b> account might have been deactivated.</li>
+    <li>Browser cache needs to be cleared.</li>
+  </ul>
+
+  <div class="step">
+    <h2>Case 1: SWIFT Application Not Used for More Than 6 Months / System Unavailable</h2>
+    <p>Follow these steps to check the available roles in OneIDM for your account:</p>
+
+    <h3>Step 1: Check Roles in OneIDM</h3>
+    <p>
+      Go to <b>OneIDM</b> using the link below: <br>
+      <a href="https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start" target="_blank">
+        https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start
+      </a>
+    </p>
+    <ul>
+      <li>Click on <b>Requests → Extend or Revoke</b></li>
+      <li>In the <b>IT Application</b> column, search for <b>PI0311</b></li>
+      <li>Click on the filter in <b>Services</b> column and enter the first role <code>X:H5TM_XXXX_MIN_USER</code> → Click <b>Search</b></li>
+      <li>Then, repeat for the second role <code>X:H5TM_XXXX_RBEI_EMPLOYEE</code> → Click <b>Search</b></li>
+    </ul>
+
+    <p>If both roles are available but access is still not working, check if the <b>PI0311 account</b> is active and if a password change is required.</p>
+  </div>
+
+  <div class="step">
+    <h2>Step 2: Account Activation & Password Change</h2>
+    <p>
+      Go to OneIDM using the below link for account activation:
+      <br>
+      <a href="https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start" target="_blank">
+        https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start
+      </a>
+    </p>
+
+    <h3>Activate Account (if ⚠️ symbol appears):</h3>
+    <ul>
+      <li>Navigate to <b>Accounts → My Accounts → PI0311 → Activate</b></li>
+      <li>Note down the <b>CRN</b> (Combined Request Number)</li>
+    </ul>
+
+    <h3>Track Request Status in OneIDM:</h3>
+    <ul>
+      <li>Go to <b>Requests → Find Requests</b></li>
+      <li>Filter with the <b>Combined Request ID</b></li>
+      <li>Enter your <b>CRN number</b> and click <b>Search</b></li>
+      <li>Workflow status should change from <b>Processing → Successful</b></li>
+    </ul>
+
+    <p>If workflow does not complete (stuck in processing), raise an IT Service Desk ticket using the link below:</p>
+    <a href="https://rb-servicecatalog.apps.intranet.bosch.com/RequestCenter/website/Grunt/application/itsupport.html" target="_blank">
+      https://rb-servicecatalog.apps.intranet.bosch.com/RequestCenter/website/Grunt/application/itsupport.html
+    </a>
+
+    <div class="note">
+      <strong>Note:</strong> You will receive a notification email from <code>identity.manager@de.bosch.com</code> once the workflow is successfully completed.
+    </div>
+  </div>
+
+  <div class="step">
+    <h2>Step 3: Reset Password (if required)</h2>
+    <ul>
+      <li>Go to <b>Accounts → Change Password</b></li>
+      <li>Search for IT Application <b>PI0311</b> and click on it</li>
+      <li>In the Password column, enter a new password as per policy</li>
+      <li>Click <b>Submit</b></li>
+    </ul>
+    <p>A new <b>Combined Request ID</b> will be generated after submission.</p>
+  </div>
+
+  <div class="step">
+    <h2>Step 4: Clear System Cache</h2>
+    <ul>
+      <li>Open your browser settings and clear the cache.</li>
+      <li>Restart your browser and try again.</li>
+      <li>If the issue persists, use an alternate browser.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
