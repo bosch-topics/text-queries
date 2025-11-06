@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Approval Roles - Leave, Travel, Planisware</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 30px;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      font-family: Consolas, monospace;
+    }
+    th {
+      background-color: #0078d4;
+      color: #fff;
+      text-align: left;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    .step {
+      margin: 15px 0;
+      padding: 10px;
+      background-color: #eef5ff;
+      border-left: 4px solid #0078d4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Approval Roles for Leave, Travel & Planisware</h1>
+
+  <p>You need approval roles for leave management, travel management, and Planisware (Billing roles if applicable).</p>
+
+  <h2>Roles by IT Application</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>IT Application</th>
+        <th>Role(s)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PH1011</td>
+        <td>X:H0HR_INXX_MA_MSS</td>
+      </tr>
+      <tr>
+        <td>PI0311</td>
+        <td>X:H5TM_XXXX_RBEI_MANAGER</td>
+      </tr>
+      <tr>
+        <td>PXG011</td>
+        <td>
+          X:0GFI_FIORI_SSF_MYACC_PDX<br>
+          X:0GXX_FIORI_ALL_MINUSER<br>
+          X:0GHR_FIORI_HCM_IN_HPE_PH1<br>
+          X:0GHR_FIORI_HCM_IN_ESS_PH1<br>
+          X:0GHR_FIORI_HCM_IN_MSS_PH1<br>
+          X:0GAM_FIORI_UIB_AMMGP_PEI<br>
+          X:0GFI_FIORI_UIB_APM_PM7<br>
+          X:0GFI_FIORI_UIB_SWIFT_PI0<br>
+          X:0GHR_FIORI_TRV_RBEI_PI0
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
