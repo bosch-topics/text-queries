@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Roles Availability in OneIDM</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fb;
+      color: #333;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .step {
+      background: #fff;
+      border-left: 5px solid #0078d4;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    ul {
+      margin: 10px 0 0 20px;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+      font-size: 0.95em;
+      display: inline-block;
+      margin: 2px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Check Roles Availability in OneIDM</h1>
+  <p>Follow the steps below to check if the required roles are available for your account in OneIDM.</p>
+
+  <div class="step">
+    <h2>Step 1: Check PI0311 Roles</h2>
+    <ul>
+      <li>Go to OneIDM using the link: 
+        <a href="https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start" target="_blank">
+          https://oneidm.bosch.com/oneidm/html/rbwebshop/#/start/itshop/VI_Start
+        </a>
+      </li>
+      <li>Click <b>Requests → Extend or Revoke</b></li>
+      <li>In the IT Application column, search <b>PI0311</b></li>
+      <li>In Services column, search for first role: <code>X:H5TM_XXXX_MIN_USER</code> and click <b>Search</b></li>
+      <li>To search the second role, enter <code>X:H5TM_XXXX_RBEI_EMPLOYEE</code> and click <b>Search</b></li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>Step 2: Check PXG011 System Role</h2>
+    <ul>
+      <li>In IT Application column, search <b>PXG011</b></li>
+      <li>In Services column, enter the role: <code>X:0GHR_FIORI_TRV_RBEI_PI0</code> and click <b>Search</b></li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h2>Step 3: Check Portal System Role</h2>
+    <ul>
+      <li>In IT Application column, search <b>Portal</b></li>
+      <li>In Services column, enter the role: 
+        <code>CN=rb_flp_swift_trv_grp,OU=portal,OU=groups,OU=esi,DC=wam-bosch,DC=com</code> and click <b>Search</b>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
